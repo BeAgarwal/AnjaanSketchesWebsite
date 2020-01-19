@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <title>Anjaan Sketches</title>
+        
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script> 
+    </head>
+    
+    
+    <body>       
+    <nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#robust">=</button>
+                <a href="#" class="navbar-brand">ANJAAN SKETCHES</a>
+            </div>            
+            </div>
+            <div class="col-md-8">
+            <div class="collapse navbar-collapse" id="robust">
+                <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./price.html">Price</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./porfolio.html">About</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="icon-bar">
+  <a href="http://www.facebook.com/anjaansketches" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="http://www.instagram.com/anjaan_sketches" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com/channel/UCEVP7ix1No8Ht1jx0AYStZQ" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+       <h1 style="margin-top: 90px;text-align: center;color: #000;">Get your price estimation.</h1>
+       
+     <div class="formcontainer">
+      <form action="" name="priceform">
+          <div class="row">
+              <div class="col-25">
+                <label  for="choosepaper">Choose your paper size.</label>
+              </div>
+              <div class="col-75">
+                <select id="paper" name="paper">
+                    <option value="null">---Select Paper Size---</option>
+                    <option value="A5">A5 (5.83 × 8.27 inches)</option>
+                    <option value="A4">A4 (8.27 × 11.69 inches)</option>
+                    <option value="A3">A3 (11.69 x 16.53 inches)</option>
+                    <option value="A2">A2 (16.53 x 23.39 inches)</option>
+                </select>
+            </div>
+
+            <div class="col-25" style="margin-top: 20px;">
+                <label  for="wantframe">Do you want to frame it?</label>
+              </div>
+              <div class="col-75" >
+                <input type="radio" name="decision" value="yes"> Yes<br>
+                <input type="radio" name="decision" value="no"> No<br>
+            </div>
+
+             <div class="col-25">
+                <label  for="choosedelivery">Choose your delivery type.</label>
+              </div>
+              <div class="col-75">
+                <select id="dtype" name="dtype">
+                    <option value="null">---Select Delivery Type---</option>
+                    <option value="sd">Normal Delivery (7 Days)</option>
+                    <option value="td">Standard Delivery (4 Days)</option>
+                    <option value="pd">Premium Delivery (2 Days)</option>
+                </select>
+            </div>
+
+            <div class="col-75" style="margin-top: 20px;">
+                <button type="button" onclick="validateForm()">Check Price</button>
+            </div>
+
+            <div class="col-25" style="margin-top: 20px;">
+                <label id="price" value=""></label>              
+            </div>
+          </div>
+      </form>  
+  </div>
+
+  <center><p><b>Note: Delivery time will start once you approve the art. As, art will be sent to you for verification. <br>Artist will take max 1 day to draw it.</b> </p></center>
+  
+<script>
+    function validateForm(){
+        var p = 0;
+        var size = document.priceform.paper.value;
+        if(size == "A5"){
+            p += 500;
+        }
+        else if(size == "A4"){
+            p += 800;
+        }
+        else if(size == "A3"){
+            p += 1200;
+        }
+        else if(size == "A2"){
+            p += 1600;
+        }
+        else{
+            alert("Please Select paper size")
+        }
+        var dec = document.priceform.decision.value;
+        if(dec == "yes"){
+            p += 400;
+        }
+        var type = document.priceform.dtype.value;
+        if(type == "sd"){
+            p += 50;
+        }
+        else if(type == "td"){
+            p += 100;
+        }
+        else if(type == "pd"){
+            p += 200;
+        }
+        else{
+            p+=0;
+        }
+
+        var strin = "Total estimation amount is &#8377;"+p;
+        document.getElementById('price').innerHTML = strin;
+    }
+
+
+</script>
+
+
+
+   <div id="footer">
+    <div class="container">
+        <center><h3 style="color: #fff">Contact us:</h3></center>
+        <center><h5 style="color: #fff"><b>Mail: anjaansketches@gmail.com<br>
+
+            <div class="social-ul-div" style="margin-top: 20px;">
+                <ul class="social-ul">
+                        <li>
+                            <a class="fa fa-facebook" href="http://www.facebook.com/anjaansketches"></a>
+                            <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCEVP7ix1No8Ht1jx0AYStZQ"></a>
+                            <a class="fa fa-instagram" href="https://www.instagram.com/anjaan_sketches"></a>
+                        </li>
+                    </ul>
+            </div>
+
+
+        <center> <p style="color: white; margin-top: 50px;">Developed and Maintained by Shubham Agarwal<br>Mail: skcsdeveloper@gmail.com<br>Copyright © 2019 Anjaan Sketches. All rights reserved &reg;</p></center>
+    </div>    
+    </div>
+            
+     <script src="js/wow.min.js"></script>
+     <script>
+        new WOW().init();
+     </script>
+
+        
+        
+        
+    </body>
+</html>

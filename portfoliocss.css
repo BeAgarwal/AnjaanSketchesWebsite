@@ -1,0 +1,144 @@
+body{
+    font-family: 'Roboto-Slab',serif;
+}
+.navbar-custom{
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px;
+    padding: 10px;    
+}
+.navbar-custom .navbar-nav>li>a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 13px;
+}
+.navbar-custom .navbar-brand{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 25px;
+}
+.navbar-custom .navbar-brand:hover{
+    font-size: 25px;
+    color: #fff;
+}
+.navbar-custom .navbar-nav>.active>a{
+    color: #fff;
+    background-color: #A9A9A9;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+    background-color: #D3D3D3;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    
+}
+.social-ul-div {
+    text-align: center;
+}
+
+.social-ul-div .fa {
+  padding-right: 30px;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#footer{
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    background-color: black;
+    top: 20px;
+}

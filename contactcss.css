@@ -1,0 +1,165 @@
+.navbar-custom{
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px;
+    padding: 10px;    
+}
+.navbar-custom .navbar-nav>li>a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 13px;
+}
+.navbar-custom .navbar-brand{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 25px;
+}
+.navbar-custom .navbar-brand:hover{
+    font-size: 25px;
+    color: #fff;
+}
+.navbar-custom .navbar-nav>.active>a{
+    color: :fff;
+    background-color: #A9A9A9;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+    background-color: #D3D3D3;
+}
+.header {
+  overflow: hidden;
+  background-color: #FF9F55;
+  padding: 20px 10px;
+}
+.social-ul-div {
+    text-align: center;
+}
+
+.social-ul-div .fa {
+  padding-right: 30px;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #FFDAB9;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+#footer{
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    position: relative;
+    background-color: black;
+    top: 150px;
+}
+a{
+    color: black;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 350px;
+}
+table tr th,
+table tr td {
+  border-right: 1px solid #A9A9A9;
+  border-bottom: 1px solid #A9A9A9;
+  padding: 5px;
+}
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #A9A9A9;
+}
+table tr {
+  background: #F3F3F3;
+  border-top: 1px solid #A9A9A9;
+  text-align: left;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
